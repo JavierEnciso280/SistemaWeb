@@ -1,10 +1,12 @@
-<?php include 'login-check.php'?>
-
+<?php
+include 'login-check.php';
+?>
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-type" content="text/html charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0
     maximun-scale=1, user-scalable=yes">
     <meta name="description" content="SystemWeb">
@@ -25,22 +27,22 @@
     
         <?php
         if(empty($_GET['alert'])){
-            echo "";
+            echo "Casillas vacias";
         }
         elseif($_GET['alert']==1){
             echo "
-                <div class='alert alert-danger alert-dismissable>
-                <button type='buton' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                <h4>< class='icon fa fa-times-circle></i>Error al iniciar sesion</h4>
-                Usuario o contraseña incorrecta, vuelva a ingresar los datos!
-                </div>
+            <div class='alert alert-warning role=alert'>                
+            <button type='button' class='close' data-dismiss='alert' aria-hidden=true'>&times;</button>
+            <h4><i class='icon fa fa-times-circle'></i>Error al iniciar sesion</h4>
+            Usuario o contraseña incorrecta, vuelva a ingresar los datos!
+            </div>
             ";
         }
         elseif($_GET['alert']==2){
             echo "
-            <div class='alert alert-sucess alert-dismissable>
-            <button type='buton' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-            <h4>< class='icon fa fa-times-circle></i>Sesión cerrada</h4>
+            <div class='alert alert-success role=alert'>            
+            <button type='buton class=close data-dismiss=alert aria-hidden=true'>&times;</button>
+            <h4><i class='icon fa fa-times-circle'></i>Sesión cerrada</h4>
             Has cerrado tu sesión correctamente
             </div>
             ";
