@@ -1,15 +1,13 @@
 <?php
-$server = 'localhost';
+
+$location = 'localhost';
 $user = 'root';
 $pass = '';
-$bd = 'sysweb';
+$dataBase = 'sysweb';
 
-$conectMysqli = new mysqli($server,$user,$pass,$bd);
-if($conectMysqli->connect_error){
-    die('error'.$conectMysqli->mysqli_error);
-    
+$conex = new mysqli($location,$user,$pass,$dataBase);
+if($conex->connect_error){
+    die('error'.$conex->connect_error);
 }
-
-
 
 ?>
