@@ -24,7 +24,7 @@
     <title>Login</title>
     </head>
     <body class="skin-blue fixed">
-        <div class="wrapper">
+        <div class="wrapper"><!--contenedor del logo y el aside-->
             <header class="main-header">
                 <a href="#" class="logo">
                     <img src="assets/img/log.png" alt="Logo SysWeb">
@@ -40,10 +40,24 @@
                     </div>
                 </nav>
             </header>
+            <aside class="main-sidebar"><!--menu lateral del main-->
+                <section class="sidebar">
+                    <?php include 'sidebar-menu.php';?><!--proceso en sidebar-menu.php-->
+                </section>
+            </aside>
         </div>
 
 
     <script src="assets/plugins/jQuery/jQuery-2.1.3.min.js"></script>
     <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="assets/plugins/chosen/js/chosen.jquery.min.js"></script>
+    <script src="assets/plugins/datatables/jquery.dataTables.js" type="text/javascript"></script>
+    <script src="assets/plugins/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
+    <script src="assets/plugins/slimScroll/jquery.slimscroll.js" type="text/javascript"></script>
+    <script src="assets/plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/fastclick/fastclick.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.maskMoney.min.js" type="text/javascript"></script>
+    <script src="assets/js/app.js" type="text/javascript"></script>
     </body>
 </html>
