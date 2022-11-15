@@ -14,7 +14,7 @@ if($_SESSION['permisos_acceso']=='Super Admin'){
     }?>
     
     <li class="<?php echo $active_home;?>">
-        <a href="?module=start"><i class="fa fa-home">Inicio</li></a>
+        <a href="?module=start"><i class="fa fa-home">Inicio</i></a>
     </li>
     <?php 
     if($_GET["module"]=="start"){?>

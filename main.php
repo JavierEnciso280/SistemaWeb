@@ -12,19 +12,19 @@
     <meta name="description" content="SystemWeb">
     <meta name="autor" content="Javier Enciso">
     <link rel="shortcut icon" href="assets/img/favicon.ico">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <link rel="stylesheet" href="assets/plugins/font-awesome-4.6.3/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/AdminLTE.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/plugins/">
+    <link rel="stylesheet" href="assets/css/skins/skin-blue.css">
     <link rel="stylesheet" href="assets/plugins/datatables/dataTables.bootstrap.css" type="text/css">
     <link rel="stylesheet" href="assets/plugins/datepicker/datepicker.min.css" type="text/css">
     <link rel="stylesheet" href="assets/plugins/chosen/css/chosen.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/skins/skin-blue.min.css">
+    <link rel="stylesheet" href="assets/css/skins/skin-blue.min.css" type="text/css">
     <title>Login</title>
     </head>
     <body class="skin-blue fixed">
-        <div class="wrapper"><!--contenedor-->
+        <div class="wrapper"> <!--contenedor-->
             <header class="main-header">
                 <a href="#" class="logo">
                     <img src="assets/img/log.png" alt="Logo SysWeb">
@@ -40,15 +40,16 @@
                     </div>
                 </nav>
             </header>
-
+        
             <aside class="main-sidebar"><!--menu lateral del main-->
                 <section class="sidebar">
-                    <?php include 'sidebar-menu.php';?><!--proceso en sidebar-menu.php-->
+                    <?php include 'sidebar-menu.php';?> <!--proceso en sidebar-menu.php-->
                 </section>
             </aside>
+            
 
             <div class="content-wrapper">
-                <?php //include 'content.php';?>
+                <?php include 'content.php';?>
                 <div class="modal fade" id="logout">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -69,15 +70,17 @@
                     </div>
                 </div>
             </div>
+            
             <footer class="main-footer">
-
+                <strong>Copyright &copy;<?php date('Y');?>- <a href="#" target="_blank">Desarrollado por X</a></strong>
             </footer>
+            
         </div>
-
-        <script src="assets/plugins/jQuery/jQuery-2.1.3.min.js"></script>
+        
+        <script src="assets/plugins/jQuery/jQuery-2.1.3.min.js" type="text/javascript"></script>
         <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="assets/plugins/datepicker/bootstrap-datepicker.min.js"></script>
-        <script src="assets/plugins/chosen/js/chosen.jquery.min.js"></script>
+        <script src="assets/plugins/datepicker/bootstrap-datepicker.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/chosen/js/chosen.jquery.min.js" type="text/javascript"></script>
         <script src="assets/plugins/datatables/jquery.dataTables.js" type="text/javascript"></script>
         <script src="assets/plugins/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
         <script src="assets/plugins/slimScroll/jquery.slimscroll.js" type="text/javascript"></script>

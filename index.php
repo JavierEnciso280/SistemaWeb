@@ -20,7 +20,7 @@ include 'login-check.php';
 </head>
 <body>
     <div class="login-box">
-        <div style = "color: #3c8dbc" class="login-logo">
+        <div style = "color: #2c8dbc" class="login-logo">
             <img style="margin-top: 15px;" src="assets/img/favicon.ico" alt="Sysweb" height="50">
             <b>SysWeb</b>
         </div>
@@ -39,13 +39,19 @@ include 'login-check.php';
                 elseif($_GET['alert']==2){
                     echo "<div class='alert alert-success alert-dismissable'>
                     <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                    <h4><i class= 'icon fa fa-times-circle'></i>Operación exitosa</h4>
+                    <h4>Operación exitosa</h4>
                     Sesión cerrada.
                     </div>";
+                }
+                elseif($_GET['alert']==3){
+                    echo "<div class='alert alert-success alert-dismissable'>
+                    <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+                    <h4>Atención!</h4>
+                    Ingresa con tu cuenta si ya posees una
+                    </div>";
                 }?>
-
         <div class="login-box-body">
-            <p class="login-box-msg"><i class="fa fa-user icon-title"></i>Por favor inicie sesión</p>
+            <p class="login-box-msg"><i class="fa fa-user icon-title"></i>Start your session please</p>
             <br>
             <form action="login-check.php" method="POST">
                 <div class="form-group has-feedback">
@@ -59,7 +65,7 @@ include 'login-check.php';
                 <br>
                 <div class="row">
                     <div class="col-xs-12">
-                        <input type="submit" class="btn btn-primary btn-lg btn-block btn-flat" name="login" value="Ingresar">
+                        <input type="submit" class="btn btn-primary btn-lg btn-block btn-flat" name="login" value="Login">
                     </div>
                 </div>
             </form>
