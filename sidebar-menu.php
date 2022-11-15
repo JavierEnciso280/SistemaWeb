@@ -23,12 +23,19 @@ if($_SESSION['permisos_acceso']=='Super Admin'){
                 <i class="fa fa-file-text"></i><span>Referenciales Generales</span><i class="fa fa-angle-left pull-right"></i>
             </a>
             <ul class="treeview-menu">
-                <li><a href="#" ><i class="fa fa-circle-o"></i>Ciudad</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i>Ciudad</a></li>
             </ul>
         </li>
-    <?php
-    }
-    ?>
+        <br>
+        <li class="treeview">
+            <a href="javascript:void(0);">
+                <i class="fa fa-file-text"></i><span>Referenciales compras</span><i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="#"><i class="fa fa-circle-o"></i>Compras</a></li>
+            </ul>
+        </li>
+    <?php } ?>
 
 </ul>
 <?php

@@ -29,14 +29,14 @@ include 'login-check.php';
                 if(empty($_GET['alert'])){
                     echo " ";
                 }
-                elseif($_GET['alert']=1){
+                elseif($_GET['alert']==1){
                     echo "<div class='alert alert-danger alert-dismissable'>
                     <button style= color:white type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
                     <h4 style='color:white'>Error al iniciar sesión</h4>
                     <p style = 'color:white'>Usuario o contraseña incorrecta, try again</p>
                     </div>";
                 }
-                elseif($_GET['alert']=2){
+                elseif($_GET['alert']==2){
                     echo "<div class='alert alert-success alert-dismissable'>
                     <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
                     <h4><i class= 'icon fa fa-times-circle'></i>Operación exitosa</h4>
