@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <link rel="stylesheet" href="assets/plugins/font-awesome-4.6.3/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/AdminLTE.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/skins/skin-blue.css">
+    <link rel="stylesheet" href="assets/css/skins/skin-blue.css" type="text/css">
     <link rel="stylesheet" href="assets/plugins/datatables/dataTables.bootstrap.css" type="text/css">
     <link rel="stylesheet" href="assets/plugins/datepicker/datepicker.min.css" type="text/css">
     <link rel="stylesheet" href="assets/plugins/chosen/css/chosen.min.css" type="text/css">
