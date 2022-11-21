@@ -1,14 +1,17 @@
 
-
+<?php
+    //include 'procesar.php';
+?>
 <section class="content-header">
     <h1>
         <i class="fa fa-lock icon-title"></i>Modificar contraseña
     </h1>
-    <div class="breadcrum">
-        <li>Inicio</li>
-        <li>Password</li>
-        <li>Modify</li>
-    </div>
+        
+    <ol class="breadcrumb">
+        <li><a href="?module=start"><i class="fa fa-home"></i>Inicio</a></li>
+        <li class="active">Contraseña</li>
+        <li class="active">Modificar</li>
+    </ol>
 </section>
 
 <section class="content">
@@ -17,7 +20,7 @@
             <!--mensajes de error-->
             <?php
                 if(empty($_GET['alert'])){
-                    echo " ";
+                    echo "";
                 }elseif($_GET['alert']==1){
                     echo "
                         <div class='alert alert-danger alert-dismissable'>
@@ -50,7 +53,7 @@
                 <form action="modules/pass/procesar.php" role="form" class="form-horizontal" method="POST">
                     <div class="box-body">
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Contraseña antigua</label>
+                            <label for="" class="col-sm-2 control-label">Contraseña anterior</label>
                             <div class="col-sm-5">
                                 <input type="password" class="form-control" name="old-password" autocomplete="off" required>
                             </div>

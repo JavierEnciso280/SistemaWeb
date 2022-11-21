@@ -16,7 +16,7 @@ if(empty($_SESSION['username']) && empty($_SESSION['password'])){
 
             $id_user = $_SESSION['id_user'];//lo que viene de la base de datos
             //realizar consulta
-            $sql = mysqli_query($conex, "SELECT password from usuarios WHERE id_user = $id_user;")
+            $sql = mysqli_query($conex, "SELECT password from usuarios WHERE id_user = $id_user")
             or die('error'.mysqli_error($conex));
             
             //convertir a array todo el resultado sql
@@ -24,18 +24,18 @@ if(empty($_SESSION['username']) && empty($_SESSION['password'])){
             
             //comparar si la contraseña es distinta a la contraseña de la bs
             if($oldPass != $data['password']){//nueva contraseña es distinta a la contraseña registrada antes
-                header("Location: ../../main.php?module=password&alert=1");
+                header("Location: ../../main.php?module=pass&alert=1");
             }else{
                 if($newPass != $retypePass){
-                    header("Location: ../../main.php?module=password&alert=2");
+                    header("Location: ../../main.php?module=pass&alert=2");
                 }else{
                     //actualizacion de password
-                    $consulta = mysqli_query($conex, "UPDATE usuarios SET password='$newPass' 
-                    WHERE id_user = $id_user;")
+                    $consulta = mysqli_query($conex, "UPDATE usuarios SET password='$newPass'
+                    WHERE id_user = '$id_user';")
                     or die('error'.mysqli_error($conex));
                     //mensaje con password ya actualizado
                     if($consulta){
-                        header("Location: ../../main.php?module=password&alert=3");
+                        header("Location: ../../main.php?module=pass&alert=3");
                     }
                 }
             }

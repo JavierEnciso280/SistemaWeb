@@ -1,7 +1,8 @@
 <?php
 include "config/database.php";
 
-$query = mysqli_query($conex, "SELECT id_user, name_user, foto, permisos_acceso FROM usuarios WHERE id_user='$_SESSION[id_user]'")
+$query = mysqli_query($conex, "SELECT id_user, name_user, foto, permisos_acceso FROM usuarios 
+WHERE id_user=$_SESSION[id_user]")
 or die('error'.mysqli_error($conex));
 $data = mysqli_fetch_assoc($query);
 

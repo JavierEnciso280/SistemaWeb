@@ -27,7 +27,7 @@ include 'login-check.php';
 
             <?php
                 if(empty($_GET['alert'])){
-                    echo " ";
+                    echo "";
                 }
                 elseif($_GET['alert']=1){
                     echo "<div class='alert alert-danger alert-dismissable'>

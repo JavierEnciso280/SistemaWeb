@@ -1,20 +1,20 @@
 <?php
 //la funcion session start() del main ya trae todos los parametros del login-check.php
 
-if($_SESSION['permisos_acceso']=='Super Admin'){?>
+if($_SESSION['permisos_acceso']=="Super Admin"){?>
 <!--etiquetas html aqui-->
     <ul class="sidebar-menu">
         <li class="header">Menu</li>
             <?php
-                if($_GET['module']='start'){
+                if($_GET['module']="start"){
                     $active_home="active";
                 }else{
-                    $active_home =" ";
+                    //$active_home =" ";
                 }
             ?>
 
-        <li class="<?php echo $active_home;?>">
-            <a href="?module=start"><i class="fa fa-home">Inicio</i></a>
+        <li class= " <?php echo $active_home; ?> ">
+            <a href="?module=start"><i class="fa fa-home"></i>Inicio</a>
         </li>
 
         <?php 
@@ -29,7 +29,7 @@ if($_SESSION['permisos_acceso']=='Super Admin'){?>
                 </ul>
             </li>
             
-            <br>
+            
             <li class="treeview">
                 <a href="javascript:void(0);">
                     <i class="fa fa-file-text"></i><span>Referenciales compras</span><i class="fa fa-angle-left pull-right"></i>
@@ -54,7 +54,7 @@ if($_SESSION['permisos_acceso']=='Super Admin'){?>
 
             <?php
          //bloque administrar usuario, visible solo para admin
-            if($_GET['module'] == 'user' || $_GET['module']=='form-user'){?>
+            if($_GET['module'] == "user" || $_GET['module']=="form-user"){?>
                 <li class="active">
                     <a href="?module=user"><i class="fa fa-user"></i>Administrar User</a>
                 </li>
@@ -69,15 +69,16 @@ if($_SESSION['permisos_acceso']=='Super Admin'){?>
             
 
              //bloque de Cambiar contraseña
-            if($_GET['module'] == 'password'){ ?>
+             
+            if($_GET['module'] == "pass"){ ?>
                 <li class="active">
-                    <a href="?module=password"><i class="fa fa-user"></i>Administrar password</a>
+                    <a href="?module=pass"><i class="fa fa-user"></i>Administrar password</a>
                 </li>
 
             <?php
             } else{ ?>
                 <li>
-                    <a href="?module=password"><i class="fa fa-user"></i>Administrar password</a>
+                    <a href="?module=pass"><i class="fa fa-user"></i>Administrar password</a>
                 </li>
             <?php
             

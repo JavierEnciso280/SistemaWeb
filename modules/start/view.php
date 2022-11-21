@@ -1,5 +1,5 @@
 <?php
-    if($_SESSION['permisos_acceso']=='Super Admin'){?>
+    if($_SESSION['permisos_acceso']=="Super Admin"){?>
 
         <section class="content-header">
             <h1>
@@ -76,7 +76,7 @@
                             </div>
                             </p>
                         </div>
-                        <a href="?module=venta" class="small-box-footer" data-toggle="tooltip" title="Ver Stock">
+                        <a href="?module=stock" class="small-box-footer" data-toggle="tooltip" title="Ver Stock">
                         <i class="fa fa-plus"></i>
                         </a>
                     </div>
