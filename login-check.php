@@ -27,6 +27,7 @@ if(isset($_POST['username']) and isset($_POST['password'])){
             $_SESSION['id_user'] = $arrayConsulta['id_user'];
             $_SESSION['username'] = $arrayConsulta['username'];
             $_SESSION['name_user'] = $arrayConsulta['name_user'];
+            $_SESSION['password'] = $arrayConsulta['password'];
             $_SESSION['permisos_acceso'] = $arrayConsulta['permisos_acceso'];
             //echo "Hi again!";
             header("Location: main.php?module=start");//llama al archivo view.php dentro de start, en ese archivo está todo el menu de inicio
@@ -36,5 +37,6 @@ if(isset($_POST['username']) and isset($_POST['password'])){
         
     }
 }
+
 
 ?>
