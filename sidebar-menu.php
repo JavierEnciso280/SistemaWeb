@@ -60,12 +60,12 @@ if($_SESSION['permisos_acceso']=='Super Admin'){ ?>
 
                     if($_GET['module']=="password"){ ?>
                         <li class="active">
-                            <a href="?module=password"><i class="fa fa-user"></i>Cambiar contraseña</a>
+                            <a href="?module=pass"><i class="fa fa-user"></i>Cambiar contraseña</a>
                         </li>
                     <?php }
                     else{ ?>
                         <li>
-                            <a href="?module=password"><i class="fa fa-user"></i>Cambiar contraseña</a>
+                            <a href="?module=pass"><i class="fa fa-user"></i>Cambiar contraseña</a>
                         </li>
                     <?php }
 

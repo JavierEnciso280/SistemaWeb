@@ -5,7 +5,7 @@
             <h1>
                 <i class="fa fa-home icon-title"></i> Inicio
             </h1>
-            <ol class="breadcrum">
+            <ol class="breadcrumb">
                 <li><a href="?module=start"><i class="fa fa-home"></i></a></li>
             </ol>
         </section>

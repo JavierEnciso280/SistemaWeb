@@ -29,28 +29,28 @@
                 if(empty($_GET['alert'])){
                     echo "";
                 }
-                elseif($_GET['alert']=1){
+                elseif($_GET['alert']==1){
                     echo "<div class='alert alert-danger alert-dismissable'>
                     <button style= color:white type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
                     <h4 style='color:white'>Error al iniciar sesión</h4>
                     <p style = 'color:white'>Usuario o contraseña incorrecta, puerquesa</p>
                     </div>";
                 }
-                elseif($_GET['alert']=2){
+                elseif($_GET['alert']==2){
                     echo "<div class='alert alert-success alert-dismissable'>
                     <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
                     <h4>Operación exitosa</h4>
                     Sesión cerrada.
                     </div>";
                 }
-                elseif($_GET['alert']=3){
+                elseif($_GET['alert']==3){
                     echo "<div class='alert alert-success alert-dismissable'>
                     <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
                     <h4>Atención!</h4>
                     Contraseña nueva resgistrada con éxito
                     </div>";
                 }
-                elseif($_GET['alert']= 4){
+                elseif($_GET['alert']== 4){
                     echo "<div class='alert alert-danger alert-dismissable'>
                     <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
                     <h4>Atención!</h4>

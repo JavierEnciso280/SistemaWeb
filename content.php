@@ -9,7 +9,7 @@
             include "modules/start/view.php";
         }
 
-        elseif($_GET['module']=='password'){
+        elseif($_GET['module']=='pass'){
             include "modules/password/view.php";
         }
 
