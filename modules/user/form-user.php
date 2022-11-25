@@ -62,6 +62,11 @@
                                 </div>
 
                                 <div class="form-group">
+                                    <label class="col-sm-2 control-label">Foto</label>
+                                    <input type="file" name="foto">
+                                </div>
+
+                                <div class="form-group">
                                     <label class="col-sm-2 control-label">Permisos de acceso</label>
                                     <div class="col-sm-5">
                                         <select name="permisos_acceso" class="form-control" required>
@@ -148,6 +153,21 @@
                                         <input type="text" name="telefono" class="form-control" autocomplete="off" maxlength="12" onkeypress="return goodchars(event, '0123456789',this)" value="<?php echo $data['telefono']; ?>" required>
                                     </div>
                                 </div>
+
+                                <!-- <div class="form-group">
+                                    <label class="col-sm-2 control-label">Estado de usuario</label>
+                                    <div class="col-sm-4">
+                                        <select name="estadoA" class="form-control" required>
+                                            <option value="<?php //echo $data['status'];?>"><?php echo $data['status'];?></option>
+                                           <option value="activo">Activo</option>
+                                             <option>No activo</option>
+                                           
+
+                                        </select>
+                                    </div>
+                                </div> -->
+
+                                
 
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">Foto</label>

@@ -87,7 +87,8 @@
                                 <th class="center">Foto</th>
                                 <th class="center">Nombre del usuario</th>
                                 <th class="center">Nombre</th>
-                                <th class="center">Permisos de acceso</th>
+<!--                            <th class="center">Email</th>
+ -->                            <th class="center">Permisos de acceso</th>
                                 <th class="center">Status</th>
                                 <th class="center">Acciones</th>
                             </tr>
@@ -112,8 +113,9 @@
                                 <?php }
                                 echo "<td>$data[username]</td>
                                         <td>$data[name_user]</td>
-                                        <td>$data[status]</td>
+                                        
                                         <td>$data[permisos_acceso]</td>
+                                        <td>$data[status]</td>
                                         <td class='center' width='100'>
                                             <div>";
                                                 // botones de bloqueado y modificar module=form y condicion act=off
