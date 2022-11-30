@@ -85,12 +85,13 @@
                             <tr>
                                 <th class="center">Nro</th>
                                 <th class="center">Foto</th>
-                                <th class="center">Nombre del usuario</th>
                                 <th class="center">Nombre</th>
-<!--                            <th class="center">Email</th>
- -->                            <th class="center">Permisos de acceso</th>
+                                <th class="center">Nombre del usuario</th>
+                            
+                                <!--<th class="center">Email</th>-->                            
+                                <th class="center">Permisos de acceso</th>
                                 <th class="center">Status</th>
-                                <th class="center">Acciones</th>
+                                <!--<th class="center">Acciones</th>-->                            
                             </tr>
                         </thead>
 
@@ -105,15 +106,16 @@
                                         <td width='50' class='center'>$nro</td>";
 
                                         if($data['foto']==""){?>
-                                        <td class="center"><img src="images/user/user-default.png" width="40" class="img-user"></td>
+                                        <!--<td class="center"><img src="images/user/user-default.png" width="40" class="img-user"></td>-->
                                 <?php 
                                     }else{ ?>
-                                        <td class="center"><img src="images/user/<?php echo $data['foto'];?>" width="40" class="img-user"></td>
+                                        <td class="center"><img class="img-user" src='images/user/<?php echo $data['foto'];?>' width="40"></td>
                                         
                                 <?php }
-                                echo "<td>$data[username]</td>
+                                echo "  
+                                        <td>$data[username]</td>
                                         <td>$data[name_user]</td>
-                                        
+                                
                                         <td>$data[permisos_acceso]</td>
                                         <td>$data[status]</td>
                                         <td class='center' width='100'>

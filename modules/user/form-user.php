@@ -1,6 +1,6 @@
 <?php
     /**en el archivo view de user se encuentra el button 'Agregar'
-     * dicho boton hace referencia a este archivo de form-user
+     * dicho boton hace referencia a este archivo form-user
      * en este archivo se van llamando a las condiciones con las sentencias que en el caso del button
      * es '?form=add'
      * href='?module=form-user?form=add'
@@ -27,7 +27,7 @@
                             <div class="box-body">
 
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">Nombre de usuario</label>
+                                    <label class="col-sm-2 control-label">Usuario</label>
                                     <div class="col-sm-5">
                                         <input type="text" name="username" class="form-control" autocomplete="off" required>
                                     </div>
@@ -47,24 +47,21 @@
                                     </div>
                                 </div>
 
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label class="col-sm-2 control-label">Email</label>
                                     <div class="col-sm-5">
                                         <input type="email" name="correo" class="form-control" autocomplete="off" required>
                                     </div>
-                                </div>
+                                </div> -->
 
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label class="col-sm-2 control-label">Telefono</label>
                                     <div class="col-sm-5">
                                         <input type="text" name="telefono" onkeypress="return goodchars(event, '0123456789',this)"  maxlength="12" class="form-control" autocomplete="off" required>
                                     </div>
                                 </div>
-
-                                <div class="form-group">
-                                    <label class="col-sm-2 control-label">Foto</label>
-                                    <input type="file" name="foto">
-                                </div>
+ -->
+                                
 
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">Permisos de acceso</label>
@@ -102,7 +99,7 @@
             $query = mysqli_query($conex, "SELECT * FROM usuarios WHERE id_user='$_GET[id]'")
             or die('error'.mysqli_error($conex));
 
-            $data = mysqli_fetch_assoc($query);//hasta aca ya viajan los datos hasta la pestaña nueva
+            $data = mysqli_fetch_assoc($query);//hasta aca los datos a la pestaña nueva
             //ahora crear la vista html
         } ?>
 
@@ -117,7 +114,7 @@
             </ol>
         </section>
         
-        <section class="contenido">
+        <section class="content">
             <div class="row">
                 <div class="col-md-12">
                     <div class="box box-primary">
@@ -129,7 +126,7 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">Nombre de usuario</label>
                                     <div class="col-sm-5">
-                                        <input type="text" name="username" class="form-control" autocomplete="off" value="<?php echo $data['username'];?>" required><!--el value trae los datos de la bd a modificar-->
+                                        <input type="text" name="username" class="form-control" autocomplete="off" value="<?php echo $data['username'];?>" required><!--el value trae los datos de la bd-->
                                     </div>
                                 </div>
 
@@ -154,19 +151,6 @@
                                     </div>
                                 </div>
 
-                                <!-- <div class="form-group">
-                                    <label class="col-sm-2 control-label">Estado de usuario</label>
-                                    <div class="col-sm-4">
-                                        <select name="estadoA" class="form-control" required>
-                                            <option value="<?php //echo $data['status'];?>"><?php echo $data['status'];?></option>
-                                           <option value="activo">Activo</option>
-                                             <option>No activo</option>
-                                           
-
-                                        </select>
-                                    </div>
-                                </div> -->
-
                                 
 
                                 <div class="form-group">
@@ -177,13 +161,15 @@
                                         <?php
                                         if($data['foto']==""){ ?>
 
-                                            <img style="border: 1px solid black; border-radius:5px;" src="images/user/user-default.png" alt="" width="50%">
+                                            <img style="border: 1px solid black; border-radius:5px;" src="images/user/user-default.png" width="128">
 
-                                <?php    }else{ ?>
+                                            <?php
+                                        }else{ ?>
 
-                                        <img style="border: 1px solid black; border-radius:5px;" src="images/user/<?php echo $data['foto'];?>" alt="" width="50%">
+                                        <img style="border: 1px solid black; border-radius:5px;" src="images/user/<?php echo $data['foto'];?>" width="128">
 
-                                <?php    }
+                                            <?php 
+                                        }
                                         
                                         ?>
 
