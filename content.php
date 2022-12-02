@@ -33,7 +33,12 @@
         elseif($_GET['module']=='form-depto'){
             include "modules/departamento/form.php";
         }
-        
+        elseif($_GET['module']=='city'){
+            include "modules/ciudad/view.php";
+        }
+        elseif($_GET['module']=='city-form'){
+            include "modules/ciudad/form.php";
+        }
 	
     }
 

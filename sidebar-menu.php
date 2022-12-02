@@ -22,7 +22,7 @@ if($_SESSION['permisos_acceso']=='Super Admin'){ ?>
                     </a>
                     <ul class="treeview-menu">
                         <li><a href="?module=depto" target=""><i class="fa fa-circle-o"></i>Departamento</a></li>
-                        <li><a href="#" target="_blank"><i class="fa fa-circle-o"></i>Ciudad</a></li>
+                        <li><a href="?module=city"><i class="fa fa-circle-o"></i>Ciudad</a></li>
                     </ul>
                 </li>
                 <li class="treeview">
@@ -99,7 +99,7 @@ if($_SESSION['permisos_acceso']=='Super Admin'){ ?>
                     </a>
                     <ul class="treeview-menu">
                         <li><a href="?module=depto" target=""><i class="fa fa-circle-o"></i>Departamento</a></li>
-                        <li><a href="#" target="_blank"><i class="fa fa-circle-o"></i>Ciudad</a></li>
+                        <li><a href="?module=city"><i class="fa fa-circle-o"></i>Ciudad</a></li>
                     </ul>
                 </li>
                 <li class="treeview">
