@@ -89,8 +89,8 @@
 
         <?php 
     
-    }else{
-        if($_SESSION['permisos_acceso']=='ventas'){?>
+    }else
+        if($_SESSION['permisos_acceso']=="ventas"){?>
 
             <section class="content-header">
                 <h1>
@@ -153,30 +153,28 @@
                 </div>
             </section>
 
-        <?php    
-        }elseif($_SESSION['permisos_acceso']=='compras'){?>
+    <?php    
+    }elseif($_SESSION['permisos_acceso']=='compras'){ ?>
             <section class="content-header">
-            <h1>
-                <i class="fa fa-home icon-title"></i> Inicio
-            </h1>
-            <ol class="breadcrumb">
-                <li><a href="?module=start"><i class="fa fa-home"></i></a></li>
-            </ol>
-        </section>
-
-        <section class="content">
-            <div class="row">
-                <div class="col-lg-12 col-xs-12">
-                    <div class="alert alert-info alert-dismissable">
-                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                        <p style="font-size: 15px;">
-                            <i class="icon fa fa-user"></i>Bienvenido <?php echo $_SESSION['name_user']; ?> a la aplicación <strong>SysWeb</strong>
-                        </p>
-                    </div>
+                <h1>
+                    <i class="fa fa-home icon-title"></i> Inicio
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="?module=start"><i class="fa fa-home"></i></a></li>
+                </ol>
+            </section>
+            <section class="content">
+                <div class="row">
+                   <div class="col-lg-12 col-xs-12">
+                        <div class="alert alert-info alert-dismissable">
+                            <button type="button" class="close" data-dismiss="alert" data-toggle="tooltip" aria-hidden="true">&times;</button>
+                            <i class="fa fa-user"></i> Bienvenido <?php echo $_SESSION['name_user']?> al <strong>SysWeb</strong>
+                        </div>
+                   </div>
                 </div>
 
-                <h2> Formulario de movimientos</h2>
-            
+                <h2>Formularios de movimiento</h2>
+            <div class="row">
                 <div class="col-lg-4 col-xs-4">
                     <div style="background-color: #00c0ef; color:white;" class="small-box">
                         <div class="inner">
@@ -214,23 +212,11 @@
                         </a>
                     </div>
                 </div>
-
-
-
-
             </div>
         </section>
 
 
 
-        <?php
-        }
-    
+    <?php    
     }
-    
-    
-    ?>
-
-
-
     

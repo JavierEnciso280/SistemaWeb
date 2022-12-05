@@ -39,6 +39,18 @@
         elseif($_GET['module']=='city-form'){
             include "modules/ciudad/form.php";
         }
+        elseif($_GET['module']=='clientes'){
+            include "modules/clientes/view.php";
+        }
+        elseif($_GET['module']=='form-clientes'){
+            include "modules/clientes/form.php";
+        }
+        elseif($_GET['module']=='compras'){
+            include "modules/compras/view.php";
+        }
+        elseif($_GET['module']=='form-compras'){
+            include "modules/compras/form.php";
+        }
 	
     }
 
