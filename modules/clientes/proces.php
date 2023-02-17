@@ -62,7 +62,8 @@ if(empty($_SESSION['username']) && empty($_SESSION['password'])){
                 }
 
 
-                $actualizar = mysqli_query($conex, "UPDATE clientes SET cod_ciudad = $cod_ciud,
+                $actualizar = mysqli_query($conex, "UPDATE clientes SET 
+                cod_ciudad = $cod_ciud,
                 ci_ruc = $ci_ruc,
                 cli_nombre = '$nombres',
                 cli_apellido = '$apellidos',

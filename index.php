@@ -1,10 +1,8 @@
-<?php
-//include 'login-check.php';
-?>
+
  
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta http-equiv="Content-type" content="text/html charset=utf-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0
@@ -33,7 +31,7 @@
                     echo "<div class='alert alert-danger alert-dismissable'>
                     <button style= color:white type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
                     <h4 style='color:white'>Error al iniciar sesión</h4>
-                    <p style = 'color:white'>Usuario o contraseña incorrecta, puerquesa</p>
+                    <p style = 'color:white'>Usuario o contraseña incorrecta</p>
                     </div>";
                 }
                 elseif($_GET['alert']==2){
@@ -60,7 +58,7 @@
 
                 
         <div class="login-box-body">
-            <p class="login-box-msg"><i class="fa fa-user icon-title"></i>Start your session please</p>
+            <p class="login-box-msg"><i class="fa fa-user icon-title"></i>Iniciar sesión</p>
             <br>
             <form action="login-check.php" method="POST">
                 <div class="form-group has-feedback">

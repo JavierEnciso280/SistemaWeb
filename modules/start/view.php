@@ -90,7 +90,7 @@
         <?php 
     
     }else
-        if($_SESSION['permisos_acceso']=="ventas"){?>
+        if($_SESSION['permisos_acceso']=="Ventas"){?>
 
             <section class="content-header">
                 <h1>
@@ -154,7 +154,7 @@
             </section>
 
     <?php    
-    }elseif($_SESSION['permisos_acceso']=='compras'){ ?>
+    }elseif($_SESSION['permisos_acceso']=='Compras'){ ?>
             <section class="content-header">
                 <h1>
                     <i class="fa fa-home icon-title"></i> Inicio

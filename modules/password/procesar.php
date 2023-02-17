@@ -35,7 +35,7 @@ if(empty($_SESSION['username']) && empty($_SESSION['password'])){
                     or die('error'.mysqli_error($conex));
                     //mensaje con password ya actualizado
                     if($consulta){
-                        header("Location: ../../main.php?module=pass&alert=3");
+                        header("Location: ../../main.php?module=pass&alert=1");
                     }
                 }
             }

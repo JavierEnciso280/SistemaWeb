@@ -76,7 +76,7 @@ if($_SESSION['permisos_acceso']=='Super Admin'){ ?>
     </ul>
 
 <?php
-}elseif($_SESSION['permisos_acceso']=='compras'){ ?>
+}elseif($_SESSION['permisos_acceso']=='Compras'){ ?>
     <ul class="sidebar-menu">
         <li class="header">Menú</li>
             <?php 
@@ -135,7 +135,7 @@ if($_SESSION['permisos_acceso']=='Super Admin'){ ?>
 
     </ul>
 <?php
-}elseif($_SESSION['permisos_acceso']=='ventas'){ ?>
+}elseif($_SESSION['permisos_acceso']=='Ventas'){ ?>
     <ul class="sidebar-menu">
         <li class="header">Menú</li>
             <?php 

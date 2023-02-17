@@ -51,6 +51,9 @@
         elseif($_GET['module']=='form-compras'){
             include "modules/compras/form.php";
         }
+        elseif($_GET['module']=='stock'){
+            include "modules/stock/view.php";
+        }
 	
     }
 
