@@ -1,12 +1,12 @@
 <?php
 //llamar a la bd
-require_once 'config/database.php';
+require_once 'assets/config/database.php';
 
 //si existen los datos username y password del metodo post
 if(isset($_POST['username']) and isset($_POST['password'])){
     //asignarles una variable y validar las mismas
     $userName = mysqli_real_escape_string($conex,stripslashes(strip_tags(htmlspecialchars(trim($_POST['username'])))));
-    $userPassword = md5(mysqli_real_escape_string($conex, stripslashes(strip_tags(htmlspecialchars(trim($_POST['password']))))));
+    $userPassword = mysqli_real_escape_string($conex, stripslashes(strip_tags(htmlspecialchars(trim($_POST['password'])))));
     //si los datos de las variables son distintos de valores alfanumericos, lanzar el alert=1 (danger)
     if(!ctype_alnum($userName) or !ctype_alnum($userPassword)){
         header("Location: index.php?alert=2");
@@ -29,13 +29,15 @@ if(isset($_POST['username']) and isset($_POST['password'])){
             $_SESSION['name_user'] = $arrayConsulta['name_user'];
             $_SESSION['password'] = $arrayConsulta['password'];
             $_SESSION['permisos_acceso'] = $arrayConsulta['permisos_acceso'];
-            
-            header("Location: main.php?module=start");//llama al archivo view.php dentro de start, en ese archivo está todo el menu de inicio
+
+           header("Location: main.php?module=start");//llama al archivo view.php dentro de start, en ese archivo está todo el menu de inicio
         }else{
             header("Location: index.php?alert=1");//lanza mensaje de error de contraseña o usuario
         }
         
     }
+}else{
+    header("Location: index.php?alert=5");
 }
 
 

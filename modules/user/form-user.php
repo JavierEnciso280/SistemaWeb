@@ -29,14 +29,14 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">Usuario</label>
                                     <div class="col-sm-5">
-                                        <input type="text" name="username" class="form-control" autocomplete="off" required>
+                                        <input type="text" name="username" class="form-control" autocomplete="off" >
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">Contraseña</label>
                                     <div class="col-sm-5">
-                                        <input type="password" name="contraseña" class="form-control" autocomplete="off" required>
+                                        <input type="password" name="contraseña" class="form-control" autocomplete="off" >
                                     </div>
                                 </div>
 

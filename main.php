@@ -67,7 +67,6 @@
         <div class="wrapper"> <!--contenedor-->
             <header class="main-header">
                 <a href="#" class="logo">
-                    <img src="assets/img/log.png" alt="Logo SysWeb">
                 </a>
                 <nav class="navbar navbar-static-top" role="navigation">
                     <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">

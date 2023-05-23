@@ -19,20 +19,21 @@
 <body>
     <div class="login-box">
         <div style = "color: #2c8dbc" class="login-logo">
-            <img style="margin-top: 15px;" src="assets/img/favicon.ico" alt="Sysweb" height="50">
-            <b>SysWeb</b>
+            <b>Sistema PHP</b>
         </div>
 
             <?php
-                if(empty($_GET['alert'])){
+                if($_GET['alert']==""){
                     echo "";
                 }
                 elseif($_GET['alert']==1){
-                    echo "<div class='alert alert-danger alert-dismissable'>
+                    echo "
+                    <div class='alert alert-danger alert-dismissable'>
                     <button style= color:white type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
                     <h4 style='color:white'>Error al iniciar sesión</h4>
                     <p style = 'color:white'>Usuario o contraseña incorrecta</p>
-                    </div>";
+                    </div>
+                    ";
                 }
                 elseif($_GET['alert']==2){
                     echo "<div class='alert alert-success alert-dismissable'>
@@ -54,7 +55,15 @@
                     <h4>Atención!</h4>
                     Las contraseñas no coinciden
                     </div>";
-                }?>
+                }
+                elseif($_GET['alert']==5){
+                    echo "<div class='alert alert-danger alert-dismissable'>
+                    <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+                    <h4>Atención!</h4>
+                    Ingrese sus datos por favor
+                    </div>";
+                }
+                ?>
 
                 
         <div class="login-box-body">
@@ -79,6 +88,11 @@
         </div>
     </div>
     
+        
+        
+
+
+
     <script src="assets/plugins/jQuery/jQuery-2.1.3.min.js"></script>
     <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 </body>
